@@ -13,21 +13,21 @@
     <!-- get -- no tiene seguridad.  post -- tiene seguridad --> 
     <fieldset class="selectores">
         <legend>Les teves dades:</legend>
-        <form action="" method="">
+        <form>
             <label for="nombre">Nom:</label>
-            <input id="nombre "type="text" placeholder="El teu nom aquí">
+            <input type="text" id="nombre" placeholder="El teu nom aquí">
             <label for="email">Email:</label>
-            <input id="email" name="" type="email" placeholder="El teu email aquí">
+            <input id="email" type="email" placeholder="El teu email aquí">
             <label for="telefono">Telefono:</label>
-            <input type="tel" name="" id="telefono" placeholder="El teu número de Telèfon aquí">
+            <input type="tel" id="telefono" placeholder="El teu número de Telèfon aquí">
             <label for="pass">Contraseña</label>
-            <input type="password" name="" id="pass">
+            <input type="password" id="pass">
         </fieldset>
         
         <fieldset class="selectores">
             <legend>Quin model busques?</legend>
             <label for="model">Model</label>
-            <select name="" id=" modalidad">
+            <select id="modalidad">
                 <option value="">Selcecciona una opció</option>
                 <option value="BMW Serie 1">BMW Serie 1</option>
                 <option value="BMW Serie 2">BMW Serie 2</option>
@@ -48,33 +48,34 @@
             <legend>Personalització:</legend>
             <span>Preferencia de discs de frenada:</span>
             <label for="discos">
-                <input type="radio" name="" id="discos" value="carbono_deportivos">Fibra de Carbono Deportivos
-                <input type="radio" name="" id="discos" value="carbono">Fibra de Carbono
-                <input type="radio" name="" id="discos" value="defecto">Per defecte
+                <input type="radio" id="discos" value="carbono_deportivos">Fibra de Carbono Deportivos
+                <input type="radio" id="discos" value="carbono">Fibra de Carbono
+                <input type="radio" id="discos" value="defecto">Per defecte
             </label>
             
             <span>Cilindrada:</span>
             <label for="intereses">
-                <input type="checkbox" name="" id="intereses" value="392">392 CV
-                <input type="checkbox" name="" id="intereses" value="510">510 CV
-                <input type="checkbox" name="" id="intereses" value="530">530 CV
+                <input type="checkbox" id="intereses" value="392">392 CV
+                <input type="checkbox" id="intereses" value="510">510 CV
+                <input type="checkbox" id="intereses" value="530">530 CV
             </label>
 
             <span>Color:</span>
             <label for="intereses">
                 <p>Escull el color al teu gust:</p>
-                <input id="color" type="color" name="black" id="black">
+                <input id="color" type="color" id="black">
             </label>
             <span>Formes de pagament:</span>
             <p>Escull com vols pagar:</p>
             <label for="intereses">
-                <input type="checkbox" name="" id="intereses" value="mensualment">Mensualment
-                <input type="checkbox" name="" id="intereses" value="anualment">Anualment
-                <input type="checkbox" name="" id="intereses" value="trimestralment">Trimestralment
-                <input type="checkbox" name="" id="intereses" value="unsolpagament">En un sol pagament
+                <input type="checkbox" id="intereses" value="mensualment">Mensualment
+                <input type="checkbox" id="intereses" value="anualment">Anualment
+                <input type="checkbox" id="intereses" value="trimestralment">Trimestralment
+                <input type="checkbox" id="intereses" value="unsolpagament">En un sol pagament
             </label>
     </fieldset>
         <button>Enviar</button>
         </form> 
 </body>
+
 </html>

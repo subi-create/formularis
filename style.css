@@ -1,0 +1,70 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+body {
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    font-style: oblique;
+}
+
+span {
+    font-size: large;
+    font-weight: bolder;
+
+}
+p {
+    font-style: italic;
+    margin: 2px;
+}
+
+header {
+    background-color: lightgrey;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+input {
+    margin: .5em;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+}
+
+.selectores {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+button {
+    background-color: lightgrey;
+    padding: 0.5em;
+    font-size: 1.3em;
+    margin: 1em;
+    width: 20%;
+    border-radius: .5em;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: lightblue;
+}

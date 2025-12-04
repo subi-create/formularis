@@ -83,7 +83,7 @@
             <p>Escull el color al teu gust:</p>
 
             <label for="colorpick">Color:</label>
-            <input type="color" id="colorpick" name="colorpick">
+            <input type="color" id="colorpick" name="colorpick" aria-label=""> <!-- error 6: aria-label vacío -->
 
             <br><br>
 
@@ -101,13 +101,16 @@
 
             <input type="checkbox" id="unpagament" name="pagament" value="unsolpagament">
             <label for="unpagament">En un sol pagament</label>
+
+            <img src="bmw.jpg"> <!-- error 7: imagen sin alt -->
         </fieldset>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" disabled>Enviar</button> <!-- error 8: botón deshabilitado sin explicación -->
     </form>
 
 </body>
 </html>
+
 
 
 

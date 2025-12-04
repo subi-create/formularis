@@ -6,29 +6,35 @@
     <link rel="stylesheet" href="style.css">
     <title>Compra el teu BMW personalitzat</title>
 </head>
+
 <body>
     <header>
         <h1>BMW Official</h1>
     </header>
-    <!-- get -- no tiene seguridad.  post -- tiene seguridad --> 
-    <fieldset class="selectores">
-        <legend>Les teves dades:</legend>
-        <form>
+
+    <form>
+        <fieldset class="selectores">
+            <legend>Les teves dades:</legend>
+
             <label for="nombre">Nom:</label>
             <input type="text" id="nombre" placeholder="El teu nom aquí">
+
             <label for="email">Email:</label>
             <input id="email" type="email" placeholder="El teu email aquí">
+
             <label for="telefono">Telefono:</label>
             <input type="tel" id="telefono" placeholder="El teu número de Telèfon aquí">
-            <label for="pass">Contraseña</label>
+
+            <label for="pass">Contraseña:</label>
             <input type="password" id="pass">
         </fieldset>
-        
+
         <fieldset class="selectores">
             <legend>Quin model busques?</legend>
-            <label for="model">Model</label>
-            <select id="modalidad">
-                <option value="">Selcecciona una opció</option>
+
+            <label for="modalidad">Model:</label>
+            <select id="modalidad" name="modalidad">
+                <option value="">Selecciona una opció</option>
                 <option value="BMW Serie 1">BMW Serie 1</option>
                 <option value="BMW Serie 2">BMW Serie 2</option>
                 <option value="BMW Serie 3">BMW Serie 3</option>
@@ -43,40 +49,62 @@
                 <option value="M8">M8</option>
             </select>
         </fieldset>
-       
         <fieldset class="selectores">
             <legend>Personalització:</legend>
-            <span>Preferencia de discs de frenada:</span>
-            <label for="discos">
-                <input type="radio" id="discos" value="carbono_deportivos">Fibra de Carbono Deportivos
-                <input type="radio" id="carbono" value="carbono">Fibra de Carbono
-                <input type="radio" id="defecto" value="defecto">Per defecte
-            </label>
-            
-            <span>Cilindrada:</span>
-            <label for="intereses">
-                <input type="checkbox" id="intereses" name="intereses" value="392">392 CV
-                <input type="checkbox" id="intereses" name="intereses" value="510">510 CV
-                <input type="checkbox" id="intereses"  name="intereses" value="530">530 CV
-            </label>
+
+            <span>Preferencia de discs de frenada:</span><br>
+
+            <input type="radio" id="disc-deportivos" name="discos" value="carbono_deportivos">
+            <label for="disc-deportivos">Fibra de Carbono Deportivos</label><br>
+
+            <input type="radio" id="disc-carbono" name="discos" value="carbono">
+            <label for="disc-carbono">Fibra de Carbono</label><br>
+
+            <input type="radio" id="disc-defecto" name="discos" value="defecto">
+            <label for="disc-defecto">Per defecte</label>
+
+            <br><br>
+            <span>Cilindrada:</span><br>
+
+            <input type="checkbox" id="cv392" name="intereses_cv" value="392">
+            <label for="cv392">392 CV</label><br>
+
+            <input type="checkbox" id="cv510" name="intereses_cv" value="510">
+            <label for="cv510">510 CV</label><br>
+
+            <input type="checkbox" id="cv530" name="intereses_cv" value="530">
+            <label for="cv530">530 CV</label><br>
+
+            <br>
 
             <span>Color:</span>
-            <label for="intereses">
-                <p>Escull el color al teu gust:</p>
-                <input type="color" id="black">
-            </label>
+            <p>Escull el color al teu gust:</p>
+
+            <label for="colorpick">Color:</label>
+            <input type="color" id="colorpick" name="colorpick">
+
+            <br><br>
+
             <span>Formes de pagament:</span>
             <p>Escull com vols pagar:</p>
-            <label for="intereses">
-                <input type="checkbox" id="intereses" name="intereses" value="mensualment">Mensualment
-                <input type="checkbox" id="intereses" name="intereses" value="anualment">Anualment
-                <input type="checkbox" id="intereses" name="intereses" value="trimestralment">Trimestralment
-                <input type="checkbox" id="intereses" name="intereses" value="unsolpagament">En un sol pagament
-            </label>
-    </fieldset>
-        <button>Enviar</button>
-        </form> 
-</body>
 
+            <input type="checkbox" id="mensual" name="pagament" value="mensualment">
+            <label for="mensual">Mensualment</label><br>
+
+            <input type="checkbox" id="anual" name="pagament" value="anualment">
+            <label for="anual">Anualment</label><br>
+
+            <input type="checkbox" id="trimestral" name="pagament" value="trimestralment">
+            <label for="trimestral">Trimestralment</label><br>
+
+            <input type="checkbox" id="unpagament" name="pagament" value="unsolpagament">
+            <label for="unpagament">En un sol pagament</label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
 </html>
+
 

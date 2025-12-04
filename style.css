@@ -4,7 +4,7 @@
 }
 
 body {
-    background-colorr: gry;
+    background-color: gray;
 }
 
 h1 {
@@ -15,23 +15,20 @@ h1 {
 span {
     font-size: large;
     font-weight: bolder;
-    text-aling: cetner;
 }
 
-}
 p {
-    font-weigth: blod;        
+    font-style: italic;        
     margin: 2px;
 }
 
 header {
     background-color: lightgrey;
 
-}
 {
 form {
     display: flex;
-    flex-diretion: colum;
+    flex-direction: column;
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
@@ -68,5 +65,5 @@ button {
 }
 
 button:hover {    
-    backgroud: lightbllue;
+    backgroud-color: lightbllue;
 }

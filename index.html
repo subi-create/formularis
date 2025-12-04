@@ -9,14 +9,15 @@
 
 <body>
     <header>
-        <h1>BMW Official</h1>
+        <h1></h1> <!-- error 1: encabezado sin contenido -->
     </header>
 
-    <form>
-        <fieldset class="selectores">
-            <legend>Les teves dades:</legend>
+    <form aria-hidden="true"> <!-- error 2: formulario inaccesible -->
 
-            <label for="nombre">Nom:</label>
+        <fieldset class="selectores">
+            <legend></legend> <!-- error 3: legend vacío -->
+
+            <label>Nom:</label> <!-- error 4: label sin atributo for -->
             <input type="text" id="nombre" placeholder="El teu nom aquí">
 
             <label for="email">Email:</label>
@@ -49,16 +50,17 @@
                 <option value="M8">M8</option>
             </select>
         </fieldset>
+
         <fieldset class="selectores">
             <legend>Personalització:</legend>
 
             <span>Preferencia de discs de frenada:</span><br>
 
-            <input type="radio" id="disc-deportivos" name="discos" value="carbono_deportivos">
+            <input type="radio" name="discos" value="carbono_deportivos">
             <label for="disc-deportivos">Fibra de Carbono Deportivos</label><br>
 
             <input type="radio" id="disc-carbono" name="discos" value="carbono">
-            <label for="disc-carbono">Fibra de Carbono</label><br>
+            <label>Fibra de Carbono</label><br> <!-- error 5: label sin for -->
 
             <input type="radio" id="disc-defecto" name="discos" value="defecto">
             <label for="disc-defecto">Per defecte</label>
@@ -106,5 +108,6 @@
 
 </body>
 </html>
+
 
 
